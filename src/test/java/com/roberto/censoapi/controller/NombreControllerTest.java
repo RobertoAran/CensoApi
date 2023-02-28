@@ -14,4 +14,7 @@ public class NombreControllerTest {
     public static int putNamesByValor() {
         return given().log().all().when().post("/censo/create/german").getStatusCode();
     }
+    public static int deleteNombre() {
+        return given().log().all().when().delete("/censo/create/Delete/1").getStatusCode();
+    }
 }

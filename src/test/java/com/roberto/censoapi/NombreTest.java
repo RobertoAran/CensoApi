@@ -30,4 +30,9 @@ class NombreTest {
     void nombreControllerPutByName() {
         Assert.assertEquals(NombreControllerTest.putNamesByValor(), 200);
     }
+
+    @Test
+    void nombreControllerDeleteById() {
+        Assert.assertEquals(NombreControllerTest.deleteNombre(), 200);
+    }
 }
