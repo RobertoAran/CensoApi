@@ -7,10 +7,8 @@ import java.util.List;
 
 public interface NombreRepository extends JpaRepository<NombreType, Integer> {
 
-    NombreType getNombreTypeById (Integer id);
-
-    List<NombreType> getNombreTypeByNombre (String nombre);
-
     @Override
     List<NombreType> findAll();
+
+    NombreType getNombreTypeById (Integer id);
 }

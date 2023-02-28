@@ -15,8 +15,7 @@ public class NombreServiceImpl implements NombreService{
 
     @Override
     public List<NombreType> findAll() {
-        List <NombreType> nombreType = nombreRepository.findAll();
-        return nombreType;
+        return nombreRepository.findAll();
     }
 
     @Override
