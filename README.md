@@ -1,6 +1,6 @@
-Spring Boot version 3.0.3
-Java 19
-Maven
+Spring Boot version 3.0.3  
+Java 19  
+Maven  
 
 Dependencias añadidas
 
