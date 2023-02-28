@@ -27,8 +27,12 @@ public class NombreController {
     @PostMapping("/create/{nombre}")
     public String putNombre(@PathVariable String nombre) {
         NombreType nombreType = new NombreType(nombre);
-        nombreType.getValor();
 
         return (nombreService.putNombre(nombreType) == 1 ? "ok" : "failed");
+    }
+
+    @DeleteMapping("/Delete/{id}")
+    public String deleteById(@PathVariable int id) {
+        return (nombreService.deleteById(id) == 1 ? "ok" : "failed");
     }
 }

@@ -38,4 +38,16 @@ public class NombreServiceImpl implements NombreService{
         }
         return ok;
     }
+
+    @Override
+    public int deleteById(int id) {
+        int ok = 0;
+        try {
+            nombreRepository.deleteById(id);
+            ok = 1;
+        }catch (Exception dbSaveError){
+            dbSaveError.printStackTrace();
+        }
+        return ok;
+    }
 }

@@ -10,4 +10,6 @@ public interface NombreService {
     NombreType getById(int idNombre);
 
     int putNombre(NombreType nombreType);
+
+    int deleteById(int id);
 }
