@@ -18,11 +18,16 @@ class NombreTest {
     }
     @Test
     void NombreControllerGetAll() {
-        Assert.assertEquals(NombreControllerTest.GetAllCensoNames(), 200);
+        Assert.assertEquals(NombreControllerTest.getAllCensoValor(), 200);
     }
 
     @Test
     void NombreControllerGetById() {
-        Assert.assertEquals(NombreControllerTest.GetNamesById(), 200);
+        Assert.assertEquals(NombreControllerTest.getValorById(), 200);
+    }
+
+    @Test
+    void nombreControllerPutByName() {
+        Assert.assertEquals(NombreControllerTest.putNamesByValor(), 200);
     }
 }

@@ -4,11 +4,14 @@ import static io.restassured.RestAssured.given;
 
 public class NombreControllerTest {
 
-    public static int GetAllCensoNames() {
+    public static int getAllCensoValor() {
         return given().log().all().when().get("/censo/all").getStatusCode();
     }
 
-    public static int GetNamesById() {
+    public static int getValorById() {
         return given().log().all().when().get("/censo/1").getStatusCode();
+    }
+    public static int putNamesByValor() {
+        return given().log().all().when().post("/censo/create/german").getStatusCode();
     }
 }
