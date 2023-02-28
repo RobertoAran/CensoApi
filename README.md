@@ -8,3 +8,6 @@ Dependencias añadidas
 -Rest Repositories  
 -Spring Data JPA  
 -Spring REST Docs  
+-org.firebirdsql.jdbc  
+-Rest Assured  
+-Junit 4
