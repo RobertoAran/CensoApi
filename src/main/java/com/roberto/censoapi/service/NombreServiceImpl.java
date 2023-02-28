@@ -26,4 +26,16 @@ public class NombreServiceImpl implements NombreService{
             return null; //Mejorar esta excepción
         }
     }
+
+    @Override
+    public int putNombre(NombreType nombreType) {
+        int ok = 0;
+        try{
+            nombreRepository.saveAndFlush(nombreType);
+            ok = 1;
+        }catch (Exception dbSaveError){
+            dbSaveError.printStackTrace();
+        }
+        return ok;
+    }
 }

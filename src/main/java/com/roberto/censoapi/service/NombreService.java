@@ -8,4 +8,6 @@ public interface NombreService {
     List<NombreType> findAll();
 
     NombreType getById(int idNombre);
+
+    int putNombre(NombreType nombreType);
 }
