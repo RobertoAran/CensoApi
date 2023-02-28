@@ -12,4 +12,6 @@ public interface NombreService {
     int putNombre(NombreType nombreType);
 
     int deleteById(int id);
+
+    int getLastId();
 }

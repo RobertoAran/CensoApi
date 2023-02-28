@@ -24,6 +24,11 @@ public class NombreController {
         return nombreService.getById(id);
     }
 
+    @GetMapping("/lastId")
+    public int getLastId() {
+        return nombreService.getLastId();
+    }
+
     @PostMapping("/create/{nombre}")
     public String putNombre(@PathVariable String nombre) {
         NombreType nombreType = new NombreType(nombre);

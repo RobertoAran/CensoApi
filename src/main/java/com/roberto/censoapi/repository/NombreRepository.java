@@ -11,4 +11,6 @@ public interface NombreRepository extends JpaRepository<NombreType, Integer> {
     List<NombreType> findAll();
 
     NombreType getNombreTypeById (Integer id);
+
+    NombreType findTopById();
 }

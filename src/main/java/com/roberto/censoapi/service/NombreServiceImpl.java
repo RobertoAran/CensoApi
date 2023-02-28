@@ -50,4 +50,9 @@ public class NombreServiceImpl implements NombreService{
         }
         return ok;
     }
+
+    @Override
+    public int getLastId(){
+        return nombreRepository.findTopById().getId();
+    }
 }
